@@ -1,0 +1,8 @@
+<suite name = "Sprint 15 User Stories">
+	<test name = "Search Functionality">
+		<classes>
+			<class name = "com.noorteck.qa.test.FruitTest"></class>
+			<class name = "com.noorteck.qa.test.SearchTest"></class>
+			</classes>
+	</test>
+</suite>

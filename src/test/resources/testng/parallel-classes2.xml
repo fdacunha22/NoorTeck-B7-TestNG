@@ -1,0 +1,11 @@
+<suite name="Parallel Execution using tests" parallel="classes" thread-count="2">
+	<test name="EBAY">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url" value="https://www.ebay.com/"></parameter>
+		<parameter name="url2" value="https://www.amazon.com/"></parameter>
+		<classes>
+			<class name="com.noorteck.qa.test.EbayTest"></class>
+			<class name="com.noorteck.qa.test.AmazonTest"></class>
+		</classes>
+	</test>
+</suite>

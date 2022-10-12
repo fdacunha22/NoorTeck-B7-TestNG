@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Crossbrowser-Parallel using tests]" parallel="tests">
+  <test thread-count="2" name="CHROME(failed)" parallel="tests">
+    <parameter name="url2" value="https://www.amazon.com/"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.ebay.com/"/>
+    <classes>
+      <class name="com.noorteck.qa.test.AmazonTest">
+        <methods>
+          <include name="test3" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.noorteck.qa.test.AmazonTest -->
+    </classes>
+  </test> <!-- CHROME(failed) -->
+  <test thread-count="2" name="FIREFOX(failed)" parallel="tests">
+    <parameter name="url2" value="https://www.amazon.com/"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.ebay.com/"/>
+    <classes>
+      <class name="com.noorteck.qa.test.AmazonTest">
+        <methods>
+          <include name="test3" invocation-numbers="0"/>
+          <include name="test4" invocation-numbers="0"/>
+          <include name="test1" invocation-numbers="0"/>
+          <include name="test2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.noorteck.qa.test.AmazonTest -->
+    </classes>
+  </test> <!-- FIREFOX(failed) -->
+</suite> <!-- Failed suite [Crossbrowser-Parallel using tests] -->

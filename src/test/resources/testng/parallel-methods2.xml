@@ -1,0 +1,9 @@
+<suite name ="Parallel Execution using methods" parellel = "methods" thread-count = "2">
+	<test name="parallel  method example" >
+		<parameter name = "browser" value = "chrome"></parameter>
+		<parameter name = "url" value = "https://www.ebay.com/"></parameter>
+		<classes>
+			<class name="com.noorteck.qa.test.EbayTest"></class>
+		</classes>
+	</test>
+</suite>

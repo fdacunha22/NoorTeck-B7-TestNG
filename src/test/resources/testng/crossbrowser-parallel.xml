@@ -1,0 +1,25 @@
+<suite name="Crossbrowser-Parallel using tests" parallel="tests" thread-count="2">
+	<test name="CHROME">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url" value="https://www.ebay.com/"></parameter>
+		<parameter name="url2" value="https://www.amazon.com/"></parameter>
+
+
+		<classes>
+			<class name="com.noorteck.qa.test.EbayTest"></class>
+			<class name="com.noorteck.qa.test.AmazonTest"></class>
+		</classes>
+	</test>
+
+	<test name="FIREFOX">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url" value="https://www.ebay.com/"></parameter>
+		<parameter name="url2" value="https://www.amazon.com/"></parameter>
+
+
+		<classes>
+			<class name="com.noorteck.qa.test.EbayTest"></class>
+			<class name="com.noorteck.qa.test.AmazonTest"></class>
+		</classes>
+	</test>
+</suite>

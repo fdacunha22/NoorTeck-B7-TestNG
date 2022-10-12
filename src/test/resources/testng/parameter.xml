@@ -1,0 +1,22 @@
+<suite name = "SPrint 20">
+    <test name = "Register Functionality">
+    
+        <parameter name = "firstName" value = "John" ></parameter>
+        <parameter name = "lastName" value = "Cena"></parameter>
+        
+        
+        <parameter name = "state" value = "VA"></parameter>
+        <parameter name = "country" value = "USA"></parameter>
+        <parameter name = "city" value = "Reston"></parameter>
+        <parameter name = "zipcode" value = "20191"></parameter>
+        <parameter name = "carName" value = "Nissan"></parameter>
+        
+        
+        
+        
+        <classes>
+            <class name = "com.noorteck.qa.test.ParameterTest"></class>
+        </classes>
+    </test>
+    
+  </suite> <!-- this comments -->

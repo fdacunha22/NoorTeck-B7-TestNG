@@ -1,0 +1,25 @@
+<suite name="Sprint 22 automation">
+	<test name="CHROME Browser">
+
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter>
+		<parameter name="username" value="admin"></parameter>
+		<parameter name="password" value="admin123"></parameter>
+
+		<classes>
+			<class name="com.noorteck.qa.test.LoginTest"></class>
+		</classes>
+	</test>
+
+	<test name="FIREFOX Browser">
+
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter>
+		<parameter name="username" value="admin"></parameter>
+		<parameter name="password" value="admin123"></parameter>
+
+		<classes>
+			<class name="com.noorteck.qa.test.LoginTest"></class>
+		</classes>
+	</test>
+</suite>

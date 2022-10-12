@@ -1,0 +1,15 @@
+<suite name="Sprint 16 User Stories">
+	<test name="Sport and Auto Functionality">
+		<groups>
+			<run>
+				<include name="car"> </include>
+				<include name="world"> </include>
+			</run>
+		</groups>
+
+
+		<classes>
+			<class name="com.noorteck.qa.test.GroupingTest"></class>
+		</classes>
+	</test>
+</suite>
